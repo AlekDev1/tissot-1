@@ -1863,6 +1863,12 @@ struct hdd_context_s
     struct mutex cache_channel_lock;
 };
 
+typedef enum  {
+        TP_IND_LOW = 1,
+        TP_IND_MEDIUM,
+        TP_IND_HIGH,
+}TP_IND_TYPE;
+
 /* Use to notify the TDLS or BTCOEX is mode enable */
 typedef enum
 {
